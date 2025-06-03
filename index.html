@@ -14,20 +14,6 @@
         gap:20px;
         background-color:coral;
     }
-    @media (max-width: 768px) {
-      .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-      }
-    }
-
-    /* 🔹 Media Query for Mobile Phones (≤480px) */
-    @media (max-width: 480px) {
-      .gallery {
-        display:grid;
-        grid-template-columns: 1fr; /* 1 column for mobile */
-        gap:20px;
-        background-color:coral;
-      }
     .item{
         text-align: center;
     }
@@ -40,6 +26,17 @@
     .gallery img:hover{
         transform: scale(0.9);
     }
+        @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+      }
+    }
+
+    /* 🔹 Media Query for Mobile Phones (≤480px) */
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+      }
 </style>
 </head>
 <body>
