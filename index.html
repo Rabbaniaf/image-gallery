@@ -14,6 +14,17 @@
         gap:20px;
         background-color:coral;
     }
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+      }
+    }
+
+    /* 🔹 Media Query for Mobile Phones (≤480px) */
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+      }
     .item{
         text-align: center;
     }
